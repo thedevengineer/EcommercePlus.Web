@@ -1,8 +1,121 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+  --main-primary-color:   #FFFCF2;
+  --main-secondary-color: #CCC5B9;
+  --main-tertiatry-color: #403D39;
 
+  --main-font-primary-color:#fff;
+  --main-font-secondary-color:#000;
+
+  --main-button-color:#16a085;
+}
 body,
 html{
     padding:0;
     margin:0;
-    height:100%
+    height:100%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+input{
+  width:100%;
+  padding:15px;
+  margin:5px;
+  border-radius:1px;
+  border:1px solid #ccc;
+}
+
+button{
+  width:100%;
+  padding:10px;
+  margin:5px;
+  border-radius:1px;
+  border:none ;
+}
+
+.mr-button {
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 18px;
+  letter-spacing: 3px;
+  position: relative;
+  border: none;
+  color: var(--main-font-primary-color);
+  padding: 20px;
+  text-align: center;
+  transition-duration: 0.4s;
+  overflow: hidden;
+  box-shadow: 0 5px 15px #193047;
+  border-radius: 4px;
+}
+
+.mr-button:hover {
+  background: #fff;
+  color: #000;
+}
+
+.mr-button:after {
+  content: "";
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.mr-button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+
+.mr-button:focus { outline:0; }
+
+.color-normal{
+  background-color: var(--main-button-color);
+}
+.color-normal:after{
+  background-color: var(--main-button-color);
+}
+
+.color-google{
+  background:#db3236;
+}
+.color-google:after{
+  background:#db3236;
+}
+
+.color-facebook{
+  background:#3b5998;
+}
+.color-facebook:after{
+  background:#3b5998;
+}
+
+
+.mr-anchor{
+  display: inline-block;
+  text-decoration: none;
+  color: var(--main-font-secondary-color)
+}
+
+.mr-anchor:hover{
+  cursor: pointer;
+}
+
+.mr-anchor::after{
+  content: '';
+  width: 0px;
+  height: 1px;
+  display: block;
+  background: black;
+  transition: 300ms;
+}
+.mr-anchor:hover::after {
+  width: 100%;
 }
