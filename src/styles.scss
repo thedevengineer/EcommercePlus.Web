@@ -2,15 +2,21 @@
 :root {
   --main-primary-color:   #FFFCF2;
   --main-secondary-color: #CCC5B9;
-  --main-tertiatry-color: #403D39;
+  --main-tertiary-color: #403D39;
 
-  --main-font-primary-color:#fff;
-  --main-font-secondary-color:#000;
+  --main-font-secondary-color:#fff;
+  --main-font-primary-color:#000;
 
   --main-button-color:#16a085;
 }
+
+
+*,*:before,*:after{box-sizing:border-box}
+
 body,
 html{
+    min-height:100vh;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     padding:0;
     margin:0;
     height:100%;
@@ -34,19 +40,19 @@ button{
 }
 
 .mr-button {
+  cursor: pointer;
   text-align: center;
   text-transform: uppercase;
-  cursor: pointer;
   font-size: 18px;
   letter-spacing: 3px;
   position: relative;
   border: none;
-  color: var(--main-font-primary-color);
+  color: var(--main-font-secondary-color);
   padding: 20px;
   text-align: center;
   transition-duration: 0.4s;
   overflow: hidden;
-  box-shadow: 0 5px 15px #193047;
+  box-shadow: 0 5px 7px #193047;
   border-radius: 4px;
 }
 
@@ -76,37 +82,25 @@ button{
 
 .mr-button:focus { outline:0; }
 
-.color-normal{
+.color-normal, .color-normal:after{
   background-color: var(--main-button-color);
 }
-.color-normal:after{
-  background-color: var(--main-button-color);
-}
-
-.color-google{
+.color-google, .color-google:after{
   background:#db3236;
 }
-.color-google:after{
-  background:#db3236;
-}
-
-.color-facebook{
-  background:#3b5998;
-}
-.color-facebook:after{
+.color-facebook, .color-facebook:after{
   background:#3b5998;
 }
 
 
 .mr-anchor{
   display: inline-block;
-  text-decoration: none;
-  color: var(--main-font-secondary-color)
+  cursor: pointer;
+  color: var(--main-font-primary-color);
+  width:40%;
+  min-width: 100px;
 }
 
-.mr-anchor:hover{
-  cursor: pointer;
-}
 
 .mr-anchor::after{
   content: '';
@@ -118,4 +112,22 @@ button{
 }
 .mr-anchor:hover::after {
   width: 100%;
+
 }
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px)  {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px)  {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px)  {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px)  {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px)  {}
+

@@ -1,61 +1,18 @@
 
-*,*:before,*:after{box-sizing:border-box}
-
-body{
-  min-height:100vh;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
-}
 
 .container{
   position:absolute;
   width:100%;
   height:100%;
   overflow:hidden;
-
-  &:hover,&:active{
-    .top, .bottom{
-      &:before, &:after{
-        margin-left: 200px;
-        transform-origin: -200px 53%;
-        transition-delay:0s;
-      }
-    }
-
-    .center{
-      opacity:1;
-      transition-delay:0.3s;
-    }
-  }
 }
-
-.top{
-  &:before, &:after{
-    content:'';
-    display:block;
-    position:absolute;
-    width:200vmax;
-    height:200vmax;
-    top:50%;left:50%;
-    margin-top:-100vmax;
-    transform-origin: 0 40%;
-    transition:all 0.5s cubic-bezier(0.445, 0.05, 0, 1);
-    z-index:10;
-    opacity:0.65;
-    transition-delay:0.2s;
-  }
-}
-
-.top{
-  &:before{transform:rotate(45deg);background:#796d6d;}
-  &:after{transform:rotate(135deg);background:#ecaf81;}
-}
-
 
 .center{
   position:absolute;
   width:400px;
   height:600px;
-  top:40%;left:50%;
+  top:30%;
+  left:50%;
   margin-left:-200px;
   margin-top:-200px;
   display:flex;
@@ -63,27 +20,17 @@ body{
   justify-content: center;
   align-items: center;
   padding:30px;
-  opacity:0;
+  opacity:1;
   transition:all 0.5s cubic-bezier(0.445, 0.05, 0, 1);
   transition-delay:0s;
-  color:#333;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
-
-
+  color:var(--main-font-primary-color);
 }
 
 .signup-forgotPassword-container
 {
-    margin: 20px auto;
+    margin: 20px 5px;
     min-width: 300px;
     width:100%;
     display: flex;
     justify-content: space-between;
-}
-
-.signup-forgotPassword-container > .mr-anchor{
-  flex: 1 1 auto; /* Size of items defined inside items */
-  text-align: center;
-  padding: 12px;
-
 }
