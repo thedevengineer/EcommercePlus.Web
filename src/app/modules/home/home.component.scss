@@ -1,0 +1,58 @@
+.banner{
+  margin-top:10px;
+  display: flex;
+  flex-direction: row;
+  max-width:100%;
+}
+.banner > div{
+  width:50%;
+}
+.banner-img{
+  object-fit: cover;
+  width:100%;
+  opacity: 0.9;
+}
+.banner-tag{
+  letter-spacing: 0.180em;
+  font-weight: 800;
+  line-height: 1.1;
+  font-size: 100px;
+  text-align: right;
+}
+p.banner-tag::before{
+  content:open-quote;
+  font-family:'Times New Roman';
+  color:grey;
+  opacity: 0.3;
+  font-size:600px;
+  position:absolute;
+  z-index: -1;
+  top:-70px;
+  left:60px;
+}
+.banner-action{
+width: 30%;
+background-color: var(--main-button-color);
+color: var( --main-font-secondary-color);
+}
+.banner-tag-container{
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px)  {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px)  {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px)  {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px)  {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px)  {}

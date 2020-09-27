@@ -4,13 +4,15 @@ import { HeaderComponent } from './components/header/header.component'
 import { SidebarComponent } from './components/sidebar/sidebar.component'
 import { FooterComponent } from './components/footer/footer.component'
 import { RouterModule } from '@angular/router'
-import { FlexLayoutModule } from '@angular/flex-layout'
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { CardComponent } from './components/card/card.component'
 
 @NgModule({
   declarations: [
     HeaderComponent,
     SidebarComponent,
-    FooterComponent
+    FooterComponent,
+    CardComponent
 
   ],
   imports: [
@@ -21,7 +23,8 @@ import { FlexLayoutModule } from '@angular/flex-layout'
   exports: [
     HeaderComponent,
     SidebarComponent,
-    FooterComponent
+    FooterComponent,
+    CardComponent
 
   ]
 })

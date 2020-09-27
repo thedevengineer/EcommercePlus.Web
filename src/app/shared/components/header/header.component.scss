@@ -1,6 +1,8 @@
 header {
     padding:0 20px;
     background-color: var(--main-primary-color);
+    color: var(--main-font-secondary-color);
+
     display:flex;
     justify-content: space-between;
 }
@@ -32,6 +34,15 @@ header {
 }
 .brand{
   padding: 15px 5px;
+}
+.brand > label{
+  font-size: 16px;
+  letter-spacing: 0.400em;
+  line-height: 0.8;
+  font-style: normal;
+  font-weight: 600;
+  text-transform: lowercase;
+  font-family: 'Arial'
 }
 .menu-ico{
   display:none;
